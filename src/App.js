@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import NumberText from './NumberText.js';
 
 class App extends Component {
   state = {number:0}
@@ -14,7 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         <button onClick={this.onClickUpdateNumber}>Hello {this.props.who}</button>
-        <span>number: {this.state.number}</span>
+        <span><NumberText /> {this.state.number}</span>
       </div>
     );
   }
