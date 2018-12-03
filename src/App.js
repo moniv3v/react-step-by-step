@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <button onClick={this.onClickUpdateNumber}>Hello world!</button>
+        <button onClick={this.onClickUpdateNumber}>Hello {this.props.who}</button>
         <span>number: {this.state.number}</span>
       </div>
     );
