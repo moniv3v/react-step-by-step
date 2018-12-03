@@ -7,7 +7,8 @@ class App extends Component {
     alert("now you know how to handle onclick event");
   }
   onClickUpdateNumber = () => {
-    this.setState({number:1})
+    this.state.number++
+    this.setState({number:this.state.number})
   }
   render() {
     return (
